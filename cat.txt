@@ -1,0 +1,38 @@
+command : cat
+-> This command is very useful command.By using this we can display the content of a file,copy content from one file to another file,connects  the content of multiploe files,displays the line number,display  $ at the end of the line etc.
+-> we use control 
+options : cat file_name
+          cat >filename
+          cat >>filename
+          cat file1>file2
+          cat file1 file2 file3 > newFile
+          cat - file1 file2 > newfile
+          cat -n filename
+          cat -b filename
+          cat -e filename
+          cat > filename <<EOF
+
+exmaples : 
+1.input : cat ls.txt
+  output: It shows the content of the given file.
+2.input : cat >sort.txt
+  output: it will creates a new file on given file_name
+3.input : cat >>sort.txt
+          hello world
+  output:hello worls line will add at the end of the sort.txt file
+4.input : cat ls.txt>sort.txt
+  output: here content of the ls.txt file will copy to the sort.txt file
+5.input : cat ls.txt sort.txt > combo.txt
+  output: Here ls.txt and sort.txt files content will be combine to another new file called combo.txt
+6.input : cat - file1 file2 > combo.txt
+          new 
+  output: Here file1 and file2 is combine and then a new text of "new" added to new file combo.txt
+7.input : cat -n ls.txt
+  output: here the content is shown with the nameline number
+8.input : cat -b ls.txt
+  output: removes the empty lines in the file
+9.input : cat -e filename
+  output: Here at the end of the every line $ symbol will be display
+10.input : cat > ls.txt << EOF
+  output : Here at the end of the file EOF can be visible
+11.
