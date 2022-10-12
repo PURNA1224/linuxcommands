@@ -1,0 +1,46 @@
+command : ls
+options : ls
+          ls -a
+          ls -l
+          ls -l --block-size=[size]
+          ls -d */
+          ls -g
+          ls -LG
+          ls --color=[value]
+          ls ~
+          ls ../
+          
+examples:
+1.input : ls
+  output: It will show the all files in current working directory.
+2.input : ls -a
+  output: It will show the all files including hiden files also which starts with '.'
+3.input : ls -l
+  output: It will give the total information about the existing files.
+4.input : ls -l --block-size=M
+  output: It will gives the size information of the file in mega bytes
+          we can use
+          K-kilobytes
+          M-megabytes
+          G-gigabytes
+          T-terabytes
+          P-petabytes
+          E-Exabytes
+          Z-Zettabytes
+          Y-yottabyte
+ 
+5.input : ls -d */
+  output: It will shows the only the files that may contain subfiles
+6.input : ls -g
+  output: It will don't shows the owner information 
+7.input : ls -LG
+  output: It will don't shows the group information
+8.input : ls --color=never
+            or
+          ls --color=auto
+  output: It will shows the some file in color  in color when we use "auto"
+9.input : ls ~
+  output: It will shows the content of home dirctory
+10.input: ls ../
+   output:It will shows the content of parent directory of present working directory
+   

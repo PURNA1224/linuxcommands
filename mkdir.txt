@@ -1,0 +1,31 @@
+command : mkdir
+options : mkdir directory_name
+          mkdir directory_name1 directory_name2 directory_name3
+          mkdir -p directory_name/subdirectory_name
+          mkdir -v directory_name
+          mkdir -vp directory_name 
+          mkdir -m=rwx file_name
+          
+examples:
+1.input : mkdir hw 
+  output: It will create a new file with a name called hw.
+          If we give same command and same file name then it will show an error called "File exists" that means file is created when we given this command for first time.
+2.input : mkdir file1 file2 file3
+  output: it will creates the multiple files we given at a time.
+3.input : mkdir -p hw/cw
+  output: it will create a main directory first and then it creates a sub directory 
+          if main directory already exists then it will not show any error and goes next to create a sub directory
+          if main dirctory not exists then it create a main directory first then after it creats a sub directory.
+4.input : mkdir -v file4
+  output: it will create a file with a message of created directory directory_name
+5.input : mkdir -pv file4/cw
+  output: It will create a main_directory and subdirectorys with a message
+6.input : mkdir -m=rwx file5
+  outpur: It will create a file and gives permission for read(r),write(w),execute(x)
+   i.we can use it separetly to give permission for only read or write or execute
+      input: mkdir -m=r file5
+            or
+            mkdir -m=w file5
+            or
+            mkdir -m=x filee5
+   
