@@ -1,0 +1,31 @@
+command : sudo
+options : sudo -V
+          sudo -l
+          sudo -h
+          sudo -v
+          sudo -k
+          sudo -K
+          sudo -b
+          sudo -n
+
+          
+
+examples:
+1.input : sudo -V
+  output: it will shows the version details.
+2.input : sudo -l
+  output: it will shows the commands that are allowed on the current host.
+3.input : sudo -h
+  output: it will show the all the options in sudo command
+4.input : sudo -v
+  -> it will not generate any output,it will update the user's timestamp by asking your password.
+5.input : sudo -k
+  output: it will invalidates the user.
+6.input : sudo -K
+  output: it will totally removes the user's timestamp entirely.
+7.input : sudo -b
+  output: it will runs the command in background.
+8.input : sudo -P
+  output: it it will override the default password prompt
+9.input : sudo -n
+  output: Use -n option as shown below, which will execute the command without prompting for the password. This is very helpful when we want to run some of the sudo commands as background jobs (or in a shell script), where we don’t want sudo to ask for the password. -n option stands for non-interactive. 
