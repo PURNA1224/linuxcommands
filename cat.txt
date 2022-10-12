@@ -35,4 +35,3 @@ exmaples :
   output: Here at the end of the every line $ symbol will be display
 10.input : cat > ls.txt << EOF
   output : Here at the end of the file EOF can be visible
-11.
