@@ -4,6 +4,10 @@ option  : sort filename
           sort -r filename
           sort -n filename
           sort -nr filename
+          sort -k column_number file_name
+          sort -c filename
+          sort -u filename
+          sort -M filename
 
 examples : 
 1. input : cat names.txt
@@ -19,4 +23,12 @@ examples :
   output: Here the numeric text file will be shows based on ASCII
 5.input : sort -nr filename
   output: Here the numeric text file will be shows in reverse order based on ASCII
-6.input : 
+6.input : sort -k 2 column2.txt
+  output: Here the content will be sorted based on the 2nd column and shows
+7.input : sort -c filename
+  output: Here it will sows the line which is not in a order
+          If it is in a order then it will not produce any output
+8.input : sort -u cars.txt
+  output : It will remove the duplicate lines and sort the file based on ASCII
+9.input : sort -M months.txt
+  output: It will shows the months based on sorted order 
