@@ -17,6 +17,7 @@ exmaples :
   output: It shows the content of the given file.
 2.input : cat >sort.txt
   output: it will creates a new file on given file_name
+          we can also insert the text 
 3.input : cat >>sort.txt
           hello world
   output:hello worls line will add at the end of the sort.txt file
