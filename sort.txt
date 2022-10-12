@@ -1,0 +1,34 @@
+command : sort
+option  : sort filename
+          sort filename > newfile
+          sort -r filename
+          sort -n filename
+          sort -nr filename
+          sort -k column_number file_name
+          sort -c filename
+          sort -u filename
+          sort -M filename
+
+examples : 
+1. input : cat names.txt
+  output : it will the sort content in a file based on ASCII code.
+           it doesn't change the actual file.
+           when we have file with both uppercase and lowercase letters then uppercase letter comes first.
+
+2.input :  sort names.txt > output.txt  
+  output: Here output will be store in new file.
+3.input : sort -r names.txt
+  output: Here the content will be visible in reverse order based on ASCII
+4.input : sort -n filename
+  output: Here the numeric text file will be shows based on ASCII
+5.input : sort -nr filename
+  output: Here the numeric text file will be shows in reverse order based on ASCII
+6.input : sort -k 2 column2.txt
+  output: Here the content will be sorted based on the 2nd column and shows
+7.input : sort -c filename
+  output: Here it will sows the line which is not in a order
+          If it is in a order then it will not produce any output
+8.input : sort -u cars.txt
+  output : It will remove the duplicate lines and sort the file based on ASCII
+9.input : sort -M months.txt
+  output: It will shows the months based on sorted order 
