@@ -1,0 +1,10 @@
+command : pwd
+options : -L , --logical
+          -P , --physical
+          --version
+          --help
+examples:
+1. input : pwd
+   output: This displays the location of the current working directory
+2. input : pwd -p
+   output: 
